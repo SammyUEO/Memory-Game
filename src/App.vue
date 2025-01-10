@@ -1,7 +1,6 @@
 <template>
   <div class="memory-game">
-    <h1>Memory Color Game</h1>
-    <p>Apasă pe pătrate pentru a găsi perechile de culori identice!</p>
+
     <div class="grid">
       <Square
         v-for="(square, index) in squares"
@@ -10,7 +9,7 @@
         @flip="flipSquare(index)"
       />
     </div>
-    <p v-if="isGameOver">Bine jucat!</p>
+
   </div>
 </template>
 
